@@ -16,3 +16,7 @@ print("End..")
 
 #file handling
 
+file = open("C:\\Users\\e010846\\PycharmProjects\\Proj1\\file\\text.txt",'w')
+
+file.write("jgjhgh")
+
