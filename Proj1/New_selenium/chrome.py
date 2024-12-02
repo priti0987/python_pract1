@@ -9,11 +9,11 @@ from selenium.webdriver.chrome.service import Service
 driver = webdriver.Chrome()
 driver.get("https://blazedemo.com/")
 driver.maximize_window()
-# title = driver.find_element(By.XPATH,"//input[@value='Find Flights']")
-# # print(title.is_displayed())
-# title.click()
-# tbody = driver.find_element(By.XPATH,"//table[@class='table']/tbody")
-# print(tbody)
+title = driver.find_element(By.XPATH,"//input[@value='Find Flights']")
+print(title.is_displayed())
+title.click()
+tbody = driver.find_element(By.XPATH,"//table[@class='table']/tbody")
+print(tbody)
 # data = []
 # for tr in tbody:
 #     row = [item.text for item in tr.find_elements(By.XPATH,'//td[6]')]
