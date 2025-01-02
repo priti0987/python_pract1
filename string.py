@@ -49,11 +49,15 @@ Note: All string methods returns new values. They do not change the original str
 '''
 myString1 = "priti2jan2025qa"
 # capitalize()	Converts the first character to upper case
-print("myString_1=>",myString1)
+print("Original myString_1=>",myString1)
+print("capitalize=>")
 print(myString1.capitalize())
 # casefold()	Converts string into lower case
-# center()	Returns a centered string
+print("casefold=> ","PRITIPRIYA".casefold())
+# center()	Returns a centered string[adding space
+print("center=>","   pttttt  ".center(-10))
 # count()	Returns the number of times a specified value occurs in a string
+print("count method==>",myString1.count("i"))
 # encode()	Returns an encoded version of the string
 # endswith()	Returns true if the string ends with the specified value
 # expandtabs()	Sets the tab size of the string
