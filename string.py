@@ -47,9 +47,10 @@ zfill()	Fills the string with a specified number of 0 values at the beginning
 Note: All string methods returns new values. They do not change the original string.
 
 '''
-
+myString1 = "priti2jan2025qa"
 # capitalize()	Converts the first character to upper case
-
+print("myString_1=>",myString1)
+print(myString1.capitalize())
 # casefold()	Converts string into lower case
 # center()	Returns a centered string
 # count()	Returns the number of times a specified value occurs in a string
