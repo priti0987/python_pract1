@@ -43,6 +43,7 @@ swapcase()	Swaps cases, lower case becomes upper case and vice versa
 title()	Converts the first character of each word to upper case
 translate()	Returns a translated string
 upper()	Converts a string into upper case
+
 zfill()	Fills the string with a specified number of 0 values at the beginning
 Note: All string methods returns new values. They do not change the original string.
 
@@ -67,12 +68,20 @@ print(myString1.find("i"))
 # format()	Formats specified values in a string
 # format_map()	Formats specified values in a string
 # index()	Searches the string for a specified value and returns the position of where it was found
+# print(myString1.index(0))
 # isalnum()	Returns True if all characters in the string are alphanumeric
+print(myString1 + "isalnum = > ",myString1.isalnum())
 # isalpha()	Returns True if all characters in the string are in the alphabet
+print(myString1+"isalpha => ",myString1.isalpha())
 # isascii()	Returns True if all characters in the string are ascii characters
+print(myString1 + " isascii => ",myString1.isascii())
 # isdecimal()	Returns True if all characters in the string are decimals
+print(myString1+" isdecimal = > ",myString1.isdecimal())
 # isdigit()	Returns True if all characters in the string are digits
+print(myString1 + " isdigit == > ",myString1.isdigit())
 # isidentifier()	Returns True if the string is an identifier
+print(myString1 + " isidentifier == > ",myString1.isidentifier())
+
 # islower()	Returns True if all characters in the string are lower case
 # isnumeric()	Returns True if all characters in the string are numeric
 # isprintable()	Returns True if all characters in the string are printable
@@ -98,6 +107,8 @@ print(myString1.find("i"))
 # strip()	Returns a trimmed version of the string
 # swapcase()	Swaps cases, lower case becomes upper case and vice versa
 # title()	Converts the first character of each word to upper case
+print("hi this is priti".title())
 # translate()	Returns a translated string
 # upper()	Converts a string into upper case
+print(myString1 + " upper = >",myString1.upper())
 # zfill()	Fills the string with a specified number of 0 values at the beginning
