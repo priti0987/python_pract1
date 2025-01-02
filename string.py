@@ -60,8 +60,10 @@ print("center=>","   pttttt  ".center(-10))
 print("count method==>",myString1.count("i"))
 # encode()	Returns an encoded version of the string
 # endswith()	Returns true if the string ends with the specified value
+print(myString1.endswith("56"))
 # expandtabs()	Sets the tab size of the string
 # find()	Searches the string for a specified value and returns the position of where it was found
+print(myString1.find("i"))
 # format()	Formats specified values in a string
 # format_map()	Formats specified values in a string
 # index()	Searches the string for a specified value and returns the position of where it was found
