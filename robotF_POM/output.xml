@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2025-02-05T01:21:53.251977" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginKeywords" source="C:\Users\e010846\PycharmProjects\robotF_POM\Resources\LoginKeywords.robot">
+<test id="s1-t1" name="priti" line="6">
+<status status="FAIL" start="2025-02-05T01:22:12.351578" elapsed="0.000000">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2025-02-05T01:21:53.262225" elapsed="19.089353"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LoginKeywords" id="s1" pass="0" fail="1" skip="0">LoginKeywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
