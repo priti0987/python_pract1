@@ -13,3 +13,8 @@ ${password}     tutorial
 LoginTest
     Open my browser     ${SiteUrl}      ${Browser}
     sleep       5
+    Enter UserName      ${username}
+    Enter Password      ${password}
+    Click SignIn
+    sleep       10
+    Verify Successfull Login

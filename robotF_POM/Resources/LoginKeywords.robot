@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-Variables   ../PageObjects/Locators.py
+Variables   ..//PageObjects//Locators.py
 
 *** Keywords ***
 Open my browser
@@ -10,17 +10,17 @@ Open my browser
 
 Enter UserName
     [Arguments]     ${username}
-    Input Text      txt_loginUserName     ${username}
+    Input Text      ${txt_loginUserName}     ${username}
 
-Enter password
+Enter Password
     [Arguments]     ${password}
-    Input Text      txt_loginPassword     ${password}
+    Input Text      ${txt_loginPassword}     ${password}
 
 Click SignIn
-    click button    ${btn_signIn}
+    click button    ${btn_login}
 
 Verify Successfull Login
-    title should be Find a Flight: Mercury Tours:
+    title should be    Login: Mercury Tours
 
 Close my browser
     close all browsers
