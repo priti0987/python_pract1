@@ -1,182 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2025-02-14T19:07:16.795960" rpa="false" schemaversion="5">
-<suite id="s1" name="RegistrationTest" source="C:\Users\e010846\PycharmProjects\robotF_POM\TestCases\RegistrationTest.robot">
-<test id="s1-t1" name="RegistrationTest" line="10">
-<kw name="Open my browser" owner="Registration">
+<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2025-02-14T20:44:59.552463" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\e010846\PycharmProjects\robotF_POM\TestCases\TC1.robot">
+<test id="s1-t1" name="LoginTestNopcommerce" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:17.897736" level="INFO">Opening browser 'Chrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<msg time="2025-02-14T20:45:00.362074" level="INFO">Opening browser 'Chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-14T19:07:17.897736" elapsed="26.556651"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-14T19:07:44.454908" elapsed="0.033510"/>
-</kw>
-<arg>${SiteUrl}</arg>
-<arg>${Browser}</arg>
-<status status="PASS" start="2025-02-14T19:07:17.897736" elapsed="26.590682"/>
+<status status="PASS" start="2025-02-14T20:45:00.362074" elapsed="8.224872"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-14T19:07:47.490134" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-14T20:45:11.588699" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-14T19:07:44.488418" elapsed="3.001716"/>
+<status status="PASS" start="2025-02-14T20:45:08.588022" elapsed="3.000677"/>
 </kw>
-<kw name="Click on Regration Link" owner="Registration">
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:47.490134" level="INFO">Clicking link '//td/a[@href='register.php']'.</msg>
-<arg>${link_reg}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:47.490134" elapsed="5.080311"/>
-</kw>
-<status status="PASS" start="2025-02-14T19:07:47.490134" elapsed="5.080542"/>
-</kw>
-<kw name="Enter FirstName" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:52.571446" level="INFO">Typing text 'Priti' into text field '//input[@name='firstName']'.</msg>
-<arg>${txt_firstName}</arg>
-<arg>${FirstName}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:52.570946" elapsed="0.116067"/>
-</kw>
-<arg>Priti</arg>
-<status status="PASS" start="2025-02-14T19:07:52.570946" elapsed="0.116567"/>
-</kw>
-<kw name="Enter lastName" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:52.688309" level="INFO">Typing text 'Fuse' into text field '//input[@name='lastName']'.</msg>
-<arg>${txt_lastName}</arg>
-<arg>${lastName}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:52.688309" elapsed="0.093709"/>
-</kw>
-<arg>Fuse</arg>
-<status status="PASS" start="2025-02-14T19:07:52.688012" elapsed="0.094006"/>
-</kw>
-<kw name="Enter phone" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:52.783802" level="INFO">Typing text '8899779988' into text field '//input[@name='phone']'.</msg>
-<arg>${txt_phone}</arg>
-<arg>${phone}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:52.782018" elapsed="0.091295"/>
-</kw>
-<arg>8899779988</arg>
-<status status="PASS" start="2025-02-14T19:07:52.782018" elapsed="0.091295"/>
-</kw>
-<kw name="Enter email" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:52.873313" level="INFO">Typing text 'test@gmail.com' into text field '//input[@name='userName']'.</msg>
-<arg>${txt_email}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:52.873313" elapsed="0.083838"/>
-</kw>
-<arg>test@gmail.com</arg>
-<status status="PASS" start="2025-02-14T19:07:52.873313" elapsed="0.083838"/>
-</kw>
-<kw name="Enter add1" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:52.957151" level="INFO">Typing text 'Nerull' into text field '//input[@name='address1']'.</msg>
-<arg>${txt_add1}</arg>
-<arg>${add1}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:52.957151" elapsed="0.072486"/>
-</kw>
-<arg>Nerull</arg>
-<status status="PASS" start="2025-02-14T19:07:52.957151" elapsed="0.072486"/>
-</kw>
-<kw name="Enter city" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:53.029637" level="INFO">Typing text 'Mumbai' into text field '//input[@name='city']'.</msg>
-<arg>${txt_city}</arg>
-<arg>${city}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:53.029637" elapsed="0.079696"/>
-</kw>
-<arg>Mumbai</arg>
-<status status="PASS" start="2025-02-14T19:07:53.029637" elapsed="0.079696"/>
-</kw>
-<kw name="Enter state" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:53.109995" level="INFO">Typing text 'Maharastra' into text field '//input[@name='state']'.</msg>
-<arg>${txt_state}</arg>
-<arg>${state}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:53.109995" elapsed="0.072285"/>
-</kw>
-<arg>Maharastra</arg>
-<status status="PASS" start="2025-02-14T19:07:53.109995" elapsed="0.072285"/>
-</kw>
-<kw name="Enter postCode" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:53.183286" level="INFO">Typing text '9988' into text field '//input[@name='postalCode']'.</msg>
-<arg>${txt_postCode}</arg>
-<arg>${postCode}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:53.183286" elapsed="0.069131"/>
-</kw>
-<arg>9988</arg>
-<status status="PASS" start="2025-02-14T19:07:53.183286" elapsed="0.069131"/>
-</kw>
-<kw name="Select country" owner="Registration">
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:53.252417" level="INFO">Selecting options from selection list '//select[@name='country']' by label ALBANIA.</msg>
-<arg>${drp_country}</arg>
-<arg>${country}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-02-14T19:07:53.252417" elapsed="0.048908"/>
-</kw>
-<arg>ALBANIA</arg>
-<status status="PASS" start="2025-02-14T19:07:53.252417" elapsed="0.048908"/>
-</kw>
-<kw name="Enter userName" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:53.303386" level="INFO">Typing text 'priti123' into text field '//input[@id='email']'.</msg>
-<arg>${txt_userName}</arg>
-<arg>${userName}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:53.302376" elapsed="0.073275"/>
-</kw>
-<arg>priti123</arg>
-<status status="PASS" start="2025-02-14T19:07:53.302376" elapsed="0.073275"/>
-</kw>
-<kw name="Enter Password" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:53.375651" level="INFO">Typing text 'indiA@1' into text field '//input[@name='password']'.</msg>
-<arg>${txt_Password}</arg>
-<arg>${Password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:53.375651" elapsed="0.087752"/>
-</kw>
-<arg>indiA@1</arg>
-<status status="PASS" start="2025-02-14T19:07:53.375651" elapsed="0.087752"/>
-</kw>
-<kw name="Enter confirmedPassword" owner="Registration">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:53.467239" level="INFO">Typing text 'indiA@1' into text field '//input[@name='confirmPassword']'.</msg>
-<arg>${txt_confirmedPassword}</arg>
-<arg>${confirmedPassword}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:53.463403" elapsed="0.132856"/>
-</kw>
-<arg>indiA@1</arg>
-<status status="PASS" start="2025-02-14T19:07:53.463403" elapsed="0.132856"/>
-</kw>
-<kw name="Click submit" owner="Registration">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-14T19:07:53.601401" level="INFO">Clicking button '//input[@name='submit']'.</msg>
-<arg>${btn_submit}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-14T19:07:53.600901" elapsed="3.620229"/>
-</kw>
-<status status="PASS" start="2025-02-14T19:07:53.600901" elapsed="3.620229"/>
-</kw>
-<status status="PASS" start="2025-02-14T19:07:17.897736" elapsed="39.324406"/>
+<status status="PASS" start="2025-02-14T20:45:00.362074" elapsed="11.227255"/>
 </test>
-<status status="PASS" start="2025-02-14T19:07:16.800988" elapsed="40.424884"/>
+<status status="PASS" start="2025-02-14T20:44:59.552463" elapsed="12.037866"/>
 </suite>
 <statistics>
 <total>
@@ -185,9 +26,10 @@
 <tag>
 </tag>
 <suite>
-<stat name="RegistrationTest" id="s1" pass="1" fail="0" skip="0">RegistrationTest</stat>
+<stat name="TC1" id="s1" pass="1" fail="0" skip="0">TC1</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-02-14T20:44:59.552463" level="WARN">Error in file 'C:\Users\e010846\PycharmProjects\robotF_POM\TestCases\TC1.robot' on line 1: Singular section headers like '*** Setting ***' are deprecated. Use plural format like '*** Settings ***' instead.</msg>
 </errors>
 </robot>
