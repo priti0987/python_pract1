@@ -12,5 +12,5 @@ RegTest
     select radio button     Gender      F
     input text      name:FirstName      testname
     input text      name:LastName       testlastname
-
+    #priti
     sleep       3
