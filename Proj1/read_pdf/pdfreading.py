@@ -1,9 +1,9 @@
-import PyPDF2
+import pypdf
 from pypdf import PdfReader
 import re
 
 
-path_pdf = "C:\\Users\\e010846\\Downloads\\qaa.pdf"
+path_pdf = "C:\\Users\\e010846\\Downloads\\QA4.pdf"
 
 reader = PdfReader(path_pdf)
 text = ""
@@ -17,4 +17,6 @@ rgx = r'(?:\.?)([\w\-_+#~!$&\'\.]+(?<!\.)(@|[ ]?\(?[ ]?(at|AT)[ ]?\)?[ ]?)(?<!\.
 matches = re.findall(rgx, text)
 get_first_group = lambda y: list(map(lambda x: x[0], y))
 emails = get_first_group(matches)
-print(emails)
+# print(emails)
+for i in emails:
+    print(i)
