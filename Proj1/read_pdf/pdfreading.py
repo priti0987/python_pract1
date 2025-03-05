@@ -3,7 +3,7 @@ from pypdf import PdfReader
 import re
 
 
-path_pdf = "C:\\Users\\e010846\\Downloads\\QA4.pdf"
+path_pdf = "C:\\Users\\e010846\\Downloads\\qa4.pdf"
 
 reader = PdfReader(path_pdf)
 text = ""

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2025-02-22T13:58:51.507823" rpa="false" schemaversion="5">
+<suite id="s1" name="speedTest" source="C:\Users\e010846\PycharmProjects\robotF_POM\TestCases\speedTest.robot">
+<test id="s1-t1" name="RegTest" line="5">
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2025-02-22T13:58:53.350316" level="INFO">${selspeed} = 0 seconds</msg>
+<var>${selspeed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-02-22T13:58:53.350316" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-22T13:58:53.350316" level="INFO">0 seconds</msg>
+<arg>${selspeed}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-22T13:58:53.350316" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-22T13:58:53.350316" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<arg>https://demowebshop.tricentis.com/register</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-22T13:58:53.350316" elapsed="20.934354"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-22T13:59:14.285170" elapsed="0.054390"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-02-22T13:59:14.339560" elapsed="0.000000"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-02-22T13:59:14.339560" level="INFO">Selecting 'F' from radio button 'Gender'.</msg>
+<arg>Gender</arg>
+<arg>F</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-02-22T13:59:14.339560" elapsed="7.023410"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-22T13:59:21.365063" level="INFO">Typing text 'testname' into text field 'name:FirstName'.</msg>
+<arg>name:FirstName</arg>
+<arg>testname</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-22T13:59:21.364190" elapsed="7.147719"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-22T13:59:28.514370" level="INFO">Typing text 'testlastname' into text field 'name:LastName'.</msg>
+<arg>name:LastName</arg>
+<arg>testlastname</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-22T13:59:28.514370" elapsed="6.219324"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2025-02-22T13:59:34.734629" level="INFO">${selspeed} = 2 seconds</msg>
+<var>${selspeed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-02-22T13:59:34.734130" elapsed="0.000499"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-22T13:59:34.734629" level="INFO">2 seconds</msg>
+<arg>${selspeed}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-22T13:59:34.734629" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-22T13:59:37.735414" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-22T13:59:34.734629" elapsed="3.000785"/>
+</kw>
+<status status="PASS" start="2025-02-22T13:58:53.349419" elapsed="44.386994"/>
+</test>
+<status status="PASS" start="2025-02-22T13:58:51.518335" elapsed="46.220200"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="speedTest" id="s1" pass="1" fail="0" skip="0">speedTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
